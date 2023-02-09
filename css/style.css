@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgColorViolet: #af67e9;
+    --bgColorBlue: #6565e7;
+    --dividers: #e7e7e9;
+    --textDark: #1d1e35;
+    --textRed: #f47c57;
+    }
+
+body{
+    background-image: linear-gradient( to bottom, var(--bgColorViolet), var(--bgColorBlue));
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+}
+
+.card{
+    background: #FFF url(../assets/bg-pattern-desktop.svg) no-repeat 1340% 65%;
+    border-radius: 20px;
+    height: 500px;
+    width: 920px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 6rem;
+}
+
+.answer{
+    display: none;
+    color: #575757;
+    font-size: 12px;
+}
+
+.active .answer{
+    display: block;
+    padding-bottom: 1rem;
+}
+
+img{
+    transform: rotate(0deg);
+    transition: all .3s ease-in;
+}
+
+.active img{
+    transform: rotate(180deg);
+    transition: all .3s ease-in;
+}
+
+.active h3{
+    font-weight: 700;
+}
+
+.accordion-wrapper{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-wrapper h1{
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.questions{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.questions-answers{
+    width: 350px;
+    border-bottom: 1px solid var(--dividers);
+}
+
+.title-question{
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 1rem 0rem;
+    color: var(--textDark);
+}
+
+.question-icon{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.question-icon img{
+    align-self: center;
+}
+
+.images{
+    position: relative;
+}
+
+.desktop-mobile-img{
+    background-image: url(../assets/illustration-woman-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 120% center;
+    height: 100%;
+}
+
+.mobile{
+    display: none;
+}
+
+.box{
+    position: absolute;
+    top: 240px;
+    left: -89px;
+}
+

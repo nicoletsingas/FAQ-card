@@ -1,0 +1,46 @@
+@media screen and (max-width:1000px){
+    
+    body .card{
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+        grid-gap: 0.5rem;
+        position: relative;
+        padding: 1.5rem;
+        height: 570px;
+    }
+
+    .images{
+        background: url(../assets/bg-pattern-mobile.svg) no-repeat center 400%;      
+    }
+
+    .images .mobile{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        top: -145%;
+    }
+
+    .images .desktop-mobile-img{
+        background-image: none;
+    }
+
+    .box{
+        display: none;
+    }
+
+    .card .accordion-wrapper{
+        margin-top: 0px;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .questions .questions-answers{
+        width: 100%;
+    }
+
+    
+}
